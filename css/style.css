@@ -27,7 +27,8 @@ h1,h2,h3,h4,h5{
 }
 
 .container{
-    width: 70%;
+     width: 90%;
+    max-width: 1200px;
     margin: auto;
 }
 .clr{
@@ -429,8 +430,51 @@ transition: color 500ms ;
 #contact .form-card .half{
     width: 50%;
 }
-@media s (max-width:992px) {
+@media  (max-width:992px) {
     #contact .form-card .half{
+        width: 100%;
+    }
+}
+/* ===== Mobile Fix ===== */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .nav .logo,
+    .nav .nav-list {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    /* About */
+    .about-img,
+    .about-caption {
+        width: 100%;
+        float: none;
+    }
+
+    .about-caption {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Services */
+    #services .list-item {
+        width: 100%;
+    }
+
+    /* Header text */
+    #home .caption h1 {
+        font-size: 35px;
+    }
+
+    #home .caption h3 {
+        font-size: 18px;
+    }
+
+    /* Form */
+    #contact .form-card .half {
         width: 100%;
     }
 }
